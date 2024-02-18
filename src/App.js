@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 
+import React, { useState } from 'react';
+import AddProductForm from './components/AddProductForm'
+import ProductList from './components/ProductList';
+
 function App() {
+
+  const [products, setProducts] = useState([]);
+
+  const addProduct = (product) => {
+    setProducts(prevProducts => [...prevProducts, product]);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Home Inventory App</h1>
+      <AddProductForm onAdd={addProduct} />
+      <ProductList products={products} />
+      {/* ProductList component will eventually go here */}
     </div>
   );
 }
