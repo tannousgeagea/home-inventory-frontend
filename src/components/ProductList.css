@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+    border-collapse: collapse; /* Removes the space between borders */
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd; /* Add a bottom border to each cell */
+  }
+  
+  
+  tr:hover {
+    background-color: #f5f5f5; /* Highlight row on hover */
+    flex-grow: 1;
+  }

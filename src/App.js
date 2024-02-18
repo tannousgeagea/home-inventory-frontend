@@ -14,11 +14,21 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="app-container">
       <h1>Home Inventory App</h1>
-      <AddProductForm onAdd={addProduct} />
-      <ProductList products={products} />
-      {/* ProductList component will eventually go here */}
+      
+      <div className='main-content'>
+        <div className='item'>
+          <h2>Add Product</h2>
+          <AddProductForm onAdd={addProduct} />
+        </div>
+
+        <div className='item'>
+          <h2>Products List</h2>
+          <ProductList products={products} />
+        </div>
+      </div>
+
     </div>
   );
 }

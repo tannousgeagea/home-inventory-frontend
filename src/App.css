@@ -1,27 +1,41 @@
-.App {
+.app-container {
+  display: flex;
+  flex-direction: column; /* Stack the header and main content vertically */
+  background-color: #e3e3e3;
+  align-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+
+.app-header {
+  background-color: #f0f0f0;
   color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.item {
+  background-color: #f0f0f0;;
+  border-radius: 10px 10px 10px 10px;
+  gap: 30px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin: 10px 10;
+  text-align: center;
+  display: table;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  flex: 1;
+}
+
+.item:hover {
+  flex-grow: 1.5;
+  background-color: #f0f0f0; /* Light background color on hover */
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2); /* Subtle shadow for depth */
 }
 
 .App-link {
@@ -35,4 +49,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.product-form {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.product-list {
+  flex: 1;
 }
