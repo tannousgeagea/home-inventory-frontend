@@ -28,6 +28,10 @@
     background-color: #555; /* Hover effect */
   }
 
+.sidebar.open {
+  transform: translateX(0);
+}
+
 @media (max-width: 768px) {
   .sidebar {
     width: 100%;
