@@ -1,0 +1,45 @@
+.home-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-hero {
+    width: 100%;
+    background-image: url(/public/assets/GettyImages-107806725.webp);
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+
+}
+.home-header {
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: var(--dl-color-gray-white); */
+  }
+
+.home-hero {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 96px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.home-features {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

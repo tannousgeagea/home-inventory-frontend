@@ -11,3 +11,4 @@ function ProductItem({ product }) {// Receive a single product object as props
 }
 
 export default ProductItem;
+
